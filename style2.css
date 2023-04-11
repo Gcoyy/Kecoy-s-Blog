@@ -1,0 +1,199 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic styling */
+  body {
+    font-family: 'Dancing Script', cursive;
+    background-color: #efe4d9;
+  }
+  
+  header {
+    background-color: rgb(92, 64, 51);
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+
+  }
+  
+  nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  nav ul li:hover::after{
+    width: 100%;
+  }
+
+  section {
+    padding: 2rem;
+  }
+  
+  section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  form label, form textarea, form input[type="text"], form input[type="email"], form button {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  form button {
+    padding: 0.5rem;
+  }
+  
+  footer {
+    background-color: rgb(92, 64, 51);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  /* Hero section */
+#hero {
+  height: 100vh;
+  position: relative; /* Add position property to establish a containing block for absolute positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Set z-index to position the video behind other content */
+}
+
+.hero-content {
+  position: relative; /* Add position property to establish a containing block for absolute positioning */
+  text-align: center;
+  z-index: 1; /* Set z-index to position the hero content above the video */
+}
+
+  .hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    display: online-block;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #666;
+  }
+
+  /* Media query for screens with a maximum width of 768 pixels (mobile screens) */
+@media (max-width: 768px) {
+  /* Adjustments for mobile screens */
+
+  /* Remove margins and padding from the body */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Make the header navigation items stack vertically */
+  header nav ul li {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* Adjust the font size and padding of the header navigation items */
+  header nav ul li a {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+
+  /* Adjust the font size and padding of the hero content */
+  .hero-content h2 {
+    font-size: 28px;
+    padding: 0 20px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .hero-content .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  /* Adjust the padding of the blog and gallery sections */
+  #blogs,
+  #gallery {
+    padding: 20px;
+  }
+
+  /* Adjust the font size and padding of the blog cards */
+  .blog-card h3 {
+    font-size: 24px;
+    padding: 0 10px;
+  }
+
+  .blog-card p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  /* Adjust the font size and padding of the gallery items */
+  .gallery-item h3 {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .gallery-item p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
