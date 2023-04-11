@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kecoy</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Kecoy's Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#animations">Animations</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="hero">
+    <video autoplay loop muted>
+      <source src="Images/hero-video.mp4" type="video/mp4"> <!-- Replace with the URL or file path of your desired video -->
+      <!-- Add additional source elements for different video formats if needed -->
+      <!-- Example: <source src="hero-video.webm" type="video/webm"> -->
+      <!-- Example: <source src="hero-video.ogv" type="video/ogg"> -->
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h2>Welcome to Kecoy's Blog</h2>
+      <p>Explore our thoughts, ideas, and experiences</p>
+      <a href="#home" class="btn">Get Started</a>
+    </div>
+  </section>
+  <section id="home">
+    <h2>Home Section</h2>
+    <p>This is the home section of my blog where I share my thoughts, ideas, and experiences.</p>
+  </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate blogger who loves to write about various topics such as technology, travel, and food.</p>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you have any questions or would like to get in touch, please fill out the form below.</p>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2023 Kecoy's Blog. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
